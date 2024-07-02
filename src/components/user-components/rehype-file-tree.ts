@@ -1,9 +1,9 @@
 import { AstroError } from 'astro/errors';
 import type { Element, ElementContent, Text } from 'hast';
-import { type Child, h, s } from 'hastscript';
-import { select } from 'hast-util-select';
 import { fromHtml } from 'hast-util-from-html';
+import { select } from 'hast-util-select';
 import { toString } from 'hast-util-to-string';
+import { h, s, type Child } from 'hastscript';
 import { rehype } from 'rehype';
 import { CONTINUE, SKIP, visit } from 'unist-util-visit';
 import { Icons } from './Icons';
