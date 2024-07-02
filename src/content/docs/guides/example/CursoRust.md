@@ -3,17 +3,26 @@ title: Curso Rust
 description: Guia basica para aprender rust
 ---
 
-# Curso Completo de Rust
-
 ## Índice del Curso
 
 1. [Introducción al Curso](#introducción-al-curso)
+    1. [Objetivo del Curso](#objetivo-del-Curso)
 2. [Instalación](#instalación)
+    1. [Instalación de Rust](#instalación-de-rust)
 3. [Tu Primer Hello World](#tu-primer-hello-world)
+    1. [Código de Ejemplo](#código-de-ejemplo)
 4. [Cargo: Gestor de Paquetes y Build System de Rust](#cargo-gestor-de-paquetes-y-build-system-de-rust)
+    1. [Iniciar un Proyecto con Cargo](#iniciar-un-proyecto-con-cargo)
 5. [Selección del IDE](#selección-del-ide)
+    1. [Configuración de Visual Studio Code para Rust](#configuración-de-visual-studio-code-para-rust)
 6. [Conceptos Fundamentales](#conceptos-fundamentales)
+    1. [Variables, Inmutabilidad y Constantes](#variables-inmutabilidad-y-constantes)
+    2. [Funciones](#funciones)
+    3. [Structs](#structs)
+    4. [Explicación](#explicación)
 7. [Flujos de Control](#flujos-de-control)
+    1. [if-else](#if-else)
+<!-- 
 8. [Collections](#collections)
 9. [Concepto de Ownership en Rust](#concepto-de-ownership-en-rust)
 10. [Smart Pointers: Mucho Más que Referencias](#smart-pointers-mucho-más-que-referencias)
@@ -25,16 +34,19 @@ description: Guia basica para aprender rust
 16. [Segunda Aplicación Rust](#segunda-aplicación-rust)
 17. [Construyendo una API de Twitter](#construyendo-una-api-de-twitter)
 18. [WebAssembly: Construye Apps para la Web con Rust](#webassembly-construye-apps-para-la-web-con-rust)
-19. [Contenido Adicional](#contenido-adicional)
+19. [Contenido Adicional](#contenido-adicional) 
+-->
 
 ## Introducción al Curso
 
-**Objetivo del Curso:**
+### Objetivo del Curso
+
 Este curso tiene como objetivo enseñarte Rust desde lo más básico hasta construir aplicaciones avanzadas. Rust es un lenguaje de programación de sistemas enfocado en la seguridad y el rendimiento.
 
 ## Instalación
 
-**Instalación de Rust:**
+### Instalación de Rust
+
 Para instalar Rust, utiliza `rustup`, el instalador de Rust:
 
 ```bash
@@ -49,9 +61,9 @@ rustc --version
 
 ## Tu Primer Hello World
 
-**Código de Ejemplo:**
+### Código de Ejemplo
 
-```bash
+```rs
 fn main() {
     // Esta línea imprime "Hello, world!" en la consola
     println!("Hello, world!");
@@ -60,7 +72,8 @@ fn main() {
 
 ## Cargo: Gestor de Paquetes y Build System de Rust
 
-**Iniciar un Proyecto con Cargo:**
+### Iniciar un Proyecto con Cargo
+
 Cargo es la herramienta de Rust para gestionar proyectos.
 
 ```bash
@@ -72,18 +85,18 @@ cargo run
 
 ## Selección del IDE
 
-**Configuración de Visual Studio Code para Rust:**
+### Configuración de Visual Studio Code para Rust
 
 Instala la extensión "rust-analyzer" en VSCode.
 Configura el debugger siguiendo la documentación oficial de VSCode y Rust <a href="https://code.visualstudio.com/docs/languages/rust" target="_blank">documentación oficial de VSCode y Rust</a>.
 
 ## Conceptos Fundamentales
 
-**Variables, Inmutabilidad y Constantes:**
+### Variables, Inmutabilidad y Constantes
 
 En Rust, las variables son inmutables por defecto, lo que significa que no puedes cambiar su valor una vez asignado. Si deseas que una variable sea mutable, debes usar la palabra clave mut. Además, Rust permite definir constantes con const, las cuales deben tener un tipo explícito y su valor no puede cambiar.
 
-```bash
+```rs
 fn main() {
     let x = 5; // x es inmutable, no se puede cambiar su valor una vez asignado
     let mut y = 10; // y es mutable, se puede cambiar su valor más adelante
@@ -91,11 +104,11 @@ fn main() {
 }
 ```
 
-**Funciones**
+### Funciones
 
 Las funciones en Rust se definen con la palabra clave fn, seguida del nombre de la función y los parámetros. El tipo de retorno se especifica después de la flecha ->. En este ejemplo, suma es una función que toma dos enteros como parámetros y retorna su suma.
 
-```bash
+```rs
 fn main() {
     println!("El resultado es: {}", suma(5, 3)); // llama a la función suma y muestra el resultado
 }
@@ -105,11 +118,11 @@ fn suma(a: i32, b: i32) -> i32 {
 }
 ```
 
-**Structs**
+### Structs
 
 Los structs en Rust permiten agrupar varios valores en una única estructura. En este ejemplo, Usuario es un struct con dos campos: nombre y edad. Luego, se crea una instancia de Usuario y se imprimen sus valores.
 
-```bash
+```rs
 // Definición del struct Usuario
 // Un struct es una colección de múltiples datos agrupados bajo un mismo nombre
 struct Usuario {
@@ -129,7 +142,7 @@ fn main() {
 }
 ```
 
-**Explicación**
+### Explicación
 
 Variables y Mutabilidad: En Rust, las variables son inmutables por defecto. Si necesitas cambiar el valor de una variable, debes declararla como mutable usando mut.
 
@@ -141,7 +154,7 @@ Structs: Permiten agrupar datos relacionados en una única estructura. Los struc
 
 ## Flujos de Control
 
-**if-else:**
+### if-else
 
 Declaración de Variables:
 
@@ -155,7 +168,7 @@ Si la condición es falsa, se ejecuta el bloque de código dentro del else y se 
 
 El uso de if-else permite tomar decisiones en el flujo del programa basado en condiciones booleanas. Este ejemplo muestra cómo evaluar una condición y ejecutar diferentes bloques de código en función del resultado de esa evaluación.
 
-```bash
+```rs
 fn main() {
     let numero = 7; // Se declara una variable inmutable llamada numero y se le asigna el valor 7
 
