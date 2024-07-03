@@ -40,6 +40,7 @@ Este es un párrafo en Markdown.
 - Elemento 1
 - Elemento 2
 ```
+## Ejemplo de MDX:
 
 ```mdx
 # Título

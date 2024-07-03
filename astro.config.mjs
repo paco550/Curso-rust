@@ -6,7 +6,7 @@ export default defineConfig({
   site: 'https://louisescher.github.io',
   base: '/',
   integrations: [starlight({
-    title: 'Ion Theme',
+    title: 'ÓXIDO',
     logo: {
       src: './src/assets/ion-logo.svg'
     },
@@ -14,18 +14,18 @@ export default defineConfig({
       github: 'https://github.com/comet-analytics/ion-theme'
     },
     sidebar: [{
-      label: '[home] Home',
+      label: '[home] inicio',
       link: '/'
     }, {
-      label: '[list] Features',
-      link: '/features/'
+      label: '[list] lista de cursos',
+      link: '/lista/'
     }, {
-      label: '[box] Guides',
+      label: '[box] Guias',
       autogenerate: {
         directory: 'guides'
       }
     }, {
-      label: '[book] Reference',
+      label: '[book] Proyectos',
       autogenerate: {
         directory: 'reference'
       }
