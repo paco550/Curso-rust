@@ -6,6 +6,7 @@ export default defineConfig({
   site: 'https://louisescher.github.io',
   base: '/',
   integrations: [starlight({
+    locales: { root: {lang: 'es', label: 'español'}},
     title: 'ÓXIDO',
     logo: {
       src: './src/assets/ion-logo.svg'
