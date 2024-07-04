@@ -3,7 +3,7 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://louisescher.github.io',
+  site: 'https://github.com/paco550/Curso-rust',
   base: '/',
   integrations: [starlight({
     locales: { root: {lang: 'es', label: 'español'}},
@@ -12,7 +12,7 @@ export default defineConfig({
       src: './src/assets/ion-logo.svg'
     },
     social: {
-      github: 'https://github.com/comet-analytics/ion-theme'
+      github: 'https://github.com/paco550/Curso-rust'
     },
     sidebar: [{
       label: '[home] inicio',
@@ -29,7 +29,7 @@ export default defineConfig({
       label: '[book] Proyectos',
       autogenerate: {
         directory: 'reference'
-      }
+      },
     }],
     components: {
       ThemeProvider: './src/components/ThemeProvider.astro',

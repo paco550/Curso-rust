@@ -1,242 +1,74 @@
 ---
-title: Lista de cursos disponible
-description: A list containing all of this theme's features.
+title: Lista de cursos disponibles
+description: Una lista que contiene todos los cursos disponibles.
 ---
 
 ## Lista de cursos disponibles
 
-The Ion template supports all features from the base Starlight template. This even applies to collapsing groups, 
-although they are handled a little different from the normal collapsing groups. To see this Theme's groups in action, 
-select the **Example Guide** in the sidebar.
+Bienvenido a la lista de cursos disponibles. Aquí encontrarás enlaces a cursos de los lenguajes y tecnologías más populares.
 
-If you want to remove the sidebar that comes with this template, simply comment out the sidebar component override
-in the `astro.config.mjs` file:
+### Cursos disponibles
 
-```js {8} title="astro.config.mjs"
-export default defineConfig({
-  integrations: [starlight({
-    // ...
-    components: {
-      ThemeProvider: './src/components/ThemeProvider.astro',
-      ThemeSelect: './src/components/ThemeSelect.astro',
-      SiteTitle: './src/components/SiteTitle.astro',
-      // Sidebar: './src/components/Sidebar.astro',
-      Pagination: './src/components/Pagination.astro',
-      Hero: './src/components/Hero.astro',
-    },
-    // ...
-  })],
-  // ...
-});
-```
+- [JavaScript](#javascript)
+- [TypeScript](#typescript)
+- [Python](#python)
+- [C#](#csharp)
+- [Rust](#rust)
+- [Markdown (MD)](#markdown)
+- [Markdown con JSX (MDX)](#mdx)
 
-:::note
-When removing the override on the `Sidebar` component, [sidebar icons](#sidebar-icons) will seize to function.
-:::
+## JavaScript
 
-This, of course, goes for any of the component overrides in this theme. If you'd like to re-enable themes, simply
-comment out this part:
+### Introducción a JavaScript
 
-```js {5-6} title="astro.config.mjs"
-export default defineConfig({
-  integrations: [starlight({
-    // ...
-    components: {
-      // ThemeProvider: './src/components/ThemeProvider.astro',
-      // ThemeSelect: './src/components/ThemeSelect.astro',
-      SiteTitle: './src/components/SiteTitle.astro',
-      Sidebar: './src/components/Sidebar.astro',
-      Pagination: './src/components/Pagination.astro',
-      Hero: './src/components/Hero.astro',
-    },
-    // ...
-  })],
-  // ...
-});
-```
+JavaScript es un lenguaje de programación versátil que se utiliza tanto en el lado del cliente como en el servidor. Aprende los fundamentos y más con este curso:
 
-As for the colors, you can edit them using the CSS variables in the `theme.css` file:
+[Ver curso de JavaScript](https://example.com/cursos/javascript)
 
-<FileTree>
+## TypeScript
 
-- node_modules/
-- public/
-- src/
-  - assets/
-  - components/
-  - content/
-  - icons/
-  - schemas/
-  - styles/
-    - **theme.css**
-    - ...
-  - ...
-- ...
+### Curso de TypeScript
 
-</FileTree>
+TypeScript es un superconjunto de JavaScript que agrega tipos estáticos. Mejora tu código y desarrollo con este curso:
 
-## ... and more ontop!
+[Ver curso de TypeScript](https://example.com/cursos/typescript)
 
-In addition to the default features & design of starlight, a couple of other things that might be useful have been added.
+## Python
 
-### Footer
+### Curso completo de Python
 
-The Pagination component override doesn't actually remove or change anything, it only adds a footer below the pagination.
-If you want to keep this footer, and want to modify it's contents, head over to this file:
+Python es conocido por su simplicidad y legibilidad. Ideal para principiantes y expertos. Descubre más aquí:
 
-import { FileTree } from '@astrojs/starlight/components';
+[Ver curso de Python](https://example.com/cursos/python)
 
-<FileTree>
+## C#
 
-- node_modules/
-- public/
-- src/
-  - assets/
-  - components/
-    - **Pagination.astro**
-  - content/
-  - ...
-- ...
+### Aprende C#
 
-</FileTree>
+C# es un lenguaje moderno y flexible desarrollado por Microsoft. Utilizado principalmente para desarrollo de aplicaciones web y de escritorio:
 
-To edit the footer, simply put your own text, icons and code into the footer:
+[Ver curso de C#](https://example.com/cursos/csharp)
 
-```astro {5,7,10} title="Pagination.astro"
-<!-- ... -->
+## Rust
 
-<div class="page-footer">
-	<div class="footer-links">
-		<span>©️ John Doe</span>
-		<span>—</span>
-		<a href="https://example.com/">Homepage</a>
-	</div>
-	<div class="social-footer-icons">
-		<a href="https://github.com/octocat" aria-label="GitHub Icon"><Icon name="github" size='1.25rem' /></a>
-		<a href="https://twitter.com/astrodotbuild" aria-label="Twitter Icon"><Icon name="twitter" size='1.25rem' /></a>
-	</div>
-</div>
-```
+### Curso de Rust
 
-:::note
-  To see what icons you can use, head over to [the Starlight docs for Icons](https://starlight.astro.build/guides/components/#icon).
-:::
+Rust es un lenguaje de sistemas que garantiza seguridad y rendimiento. Ideal para desarrollo de sistemas y aplicaciones de alto rendimiento:
 
-### Sidebar Icons
+[Ver curso de Rust](https://example.com/cursos/rust)
 
-As mentioned before, the sidebar has received a big overhaul with this theme. To add to the new style, there's now
-an easy way to add **Icons** to any group or link.
+## Markdown (MD)
 
-#### Groups
-Since this theme doesn't show lower-level groups and instead expects you to have markdown files with the same slug as the folder,
-only top-level groups are supported. This is how you add any SVG as an icon to a top-level group:
+### Guía de Markdown
 
-import { Steps } from '@astrojs/starlight/components';
+Markdown es un lenguaje de marcado ligero para formatear texto. Aprende a crear documentación y contenido web con esta guía:
 
-<Steps>
+[Ver guía de Markdown](https://example.com/cursos/markdown)
 
-1. **Create a .astro file for the SVG**
+## Markdown con JSX (MDX)
 
-   To add an icon, head over to the icons directory:
+### Tutorial de MDX
 
-   <FileTree>
+MDX permite utilizar JSX dentro de Markdown. Potencia tus documentos y blogs con componentes React:
 
-   - node_modules/
-   - public/
-   - src/
-     - assets/
-     - components/
-     - content/
-     - **icons/**
-     - ...
-   - ...
-
-   </FileTree>
-
-2. Create a new .astro file, with the filename as the name of the icon:
-
-   <FileTree>
-
-   - node_modules/
-   - public/
-   - src/
-     - assets/
-     - components/
-     - content/
-     - icons/
-       - **rocket.astro**
-     - ...
-   - ...
-
-   </FileTree>
-
-3. Put the SVG code into the newly created file:
-  
-   ```astro
-   <svg width="16px" height="16px"><!-- ... --></svg>
-   ```
-
-   :::note
-     A size of 16px is recommended.
-   :::
-
-4. Reference the icon in your `astro.config.mjs`:
-
-   ```js "[rocket]" title="astro.config.mjs"
-   export default defineConfig({
-     integrations: [starlight({
-       // ...
-       sidebar: [{
-         label: '[rocket] Launch Information',
-         autogenerate: {
-           directory: 'launch-info'
-         }
-       }],
-       // ...
-     })],
-     // ...
-   });
-   ```
-
-</Steps>
-
-#### Links / Files
-
-For individual links specified in your `astro.config.mjs`, you can add icons the same way as groups. For files,
-you can simply reference the icon in the Frontmatter title:
-
-```md title="example.md" "[rocket]"
----
-title: "[rocket] Above and beyond"
-# ...
----
-```
-
-:::caution
-  The `"..."` quotes around the title are required. Starlight will throw an error otherwise.
-:::
-
-import HeaderBadge from '@/components/HeaderBadge.astro';
-
-### Header Badges <HeaderBadge text="I'm a Badge!" variant="default" />
-
-Starlight provides a way for you to add badges to items in the sidebar. This is great for drawing attention to certain
-links. Often times, this is used to show that something has been updated. However, when following the link, there is no way
-to tell which part of the page has been updated. 
-
-To combat this, the Ion theme ships with a `<HeaderBadge />` component! To use it, simply add it behind any header, like so:
-
-```mdx "<HeaderBadge />" title="example.mdx"
-import HeaderBadge from '@/components/HeaderBadge.astro';
-
-### Example <HeaderBadge text="I'm a Badge!" />
-```
-
-## Finishing up
-
-Thanks for using the Ion theme! Feel free to delete this file, or keep it around if you want to check out the 
-included features again. If you like this theme, you can
-[give it a Star on GitHub](https://github.com/louisescher/ion-starlight-theme), and if you feel inclined to,
-you can become one of my [Patreon members](https://patreon.com/louis_escher).
-
-_You'll be featured on my Homepage!_
+[Ver tutorial de MDX](https://example.com/cursos/mdx)
