@@ -1,12 +1,19 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
+import react from "@astrojs/react";
+
 // https://astro.build/config
 export default defineConfig({
   site: 'https://github.com/paco550/Curso-rust',
   base: '/',
   integrations: [starlight({
-    locales: { root: {lang: 'es', label: 'español'}},
+    locales: {
+      root: {
+        lang: 'es',
+        label: 'español'
+      }
+    },
     title: 'ÓXIDO',
     logo: {
       src: './src/assets/ion-logo.svg'
@@ -29,7 +36,7 @@ export default defineConfig({
       label: '[book] Proyectos',
       autogenerate: {
         directory: 'reference'
-      },
+      }
     }],
     components: {
       ThemeProvider: './src/components/ThemeProvider.astro',
@@ -37,19 +44,14 @@ export default defineConfig({
       SiteTitle: './src/components/SiteTitle.astro',
       Sidebar: './src/components/Sidebar.astro',
       Pagination: './src/components/Pagination.astro',
-      Hero: './src/components/Hero.astro',
+      Hero: './src/components/Hero.astro'
     },
-    customCss: [
-      '@fontsource-variable/space-grotesk/index.css',
-      '@fontsource/space-mono/400.css',
-      '@fontsource/space-mono/700.css',
-      './src/styles/theme.css'
-    ],
+    customCss: ['@fontsource-variable/space-grotesk/index.css', '@fontsource/space-mono/400.css', '@fontsource/space-mono/700.css', './src/styles/theme.css'],
     expressiveCode: {
       themes: ['github-dark']
     },
     pagination: false,
     lastUpdated: true
-  })],
+  }), react()],
   output: "static"
 });
