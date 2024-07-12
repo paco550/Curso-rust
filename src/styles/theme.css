@@ -52,6 +52,7 @@ header.header {
 /* Add a gap to the now split + flex site title */
 .site-title {
   gap: 1rem;
+  
 }
 
 /* Reduce the image size of the site title */
@@ -62,7 +63,8 @@ header.header {
 .site-title > span {
   display: flex;
   gap: 0.5rem;
-  color: var(--sl-color-white);
+  /* color: var(--sl-color-white); */
+  color: #ac065e;
 }
 
 /* Change link color for icons from accent-light to white */

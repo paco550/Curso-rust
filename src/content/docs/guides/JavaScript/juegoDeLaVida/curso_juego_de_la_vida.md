@@ -1,5 +1,5 @@
 ---
-title: El juego de la vida (javaScript)
+title: El juego de la vida (JS)
 description: Guia basica para crear el juego de la vida de John Horton Conway 
 ---
 
