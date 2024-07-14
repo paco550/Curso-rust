@@ -1,9 +1,9 @@
 ---
 title: El juego de la vida (javaScript)
-description: Guia basica para crear el juego de la vida de John Horton Conway 
+description: Guia basica para crear el juego de la vida de John Horton Conway
 ---
 
-# Curso: Implementación del "Juego de la Vida" con Astro
+# Implementación del "Juego de la Vida" con Astro
 
 ## Introducción
 
@@ -19,8 +19,8 @@ Este juego tiene aplicaciones en biología, computación y física, demostrando 
 **Visuales:**
 Añadir diagramas y animaciones para explicar las reglas. Por ejemplo, puedes usar herramientas como [draw.io](https://app.diagrams.net/) para crear diagramas.
 
-**Ejemplos:**
-Incluir ejemplos concretos, como el "glider" (planeador), un patrón que se mueve diagonalmente a través del tablero.
+<!-- **Ejemplos:**
+Incluir ejemplos concretos, como el "glider" (planeador), un patrón que se mueve diagonalmente a través del tablero. -->
 
 **Preguntas Frecuentes:**
 
@@ -43,8 +43,8 @@ npm install
 **Alternativas:**
 Si prefieres otras tecnologías, puedes usar frameworks como React o Vue.
 
-**Capturas de pantalla:**
-Añadir capturas de pantalla del proceso de instalación para mayor claridad.
+<!-- **Capturas de pantalla:**
+Añadir capturas de pantalla del proceso de instalación para mayor claridad. -->
 
 ## Implementación Paso a Paso
 
@@ -195,19 +195,19 @@ ContarVecinos(x, y) -> Contar celdas vivas alrededor de (x, y)
 SiguienteGeneracion() -> Actualizar estado de cada celda
 ```
 
-**Comentarios en el código:**
-Añade comentarios explicativos en cada parte del código.
+<!-- **Comentarios en el código:**
+Añade comentarios explicativos en cada parte del código. -->
 
-## Ejecución y Pruebas
+<!-- ## Ejecución y Pruebas
 
 **Guía interactiva:**
 Permite al usuario experimentar con el juego en tiempo real y observar su comportamiento.
 
 **Casos de prueba:**
-Muestra ejemplos de patrones como el "glider" y cómo se comportan en el juego.
-
+Muestra ejemplos de patrones como el "glider" y cómo se comportan en el juego. -->
+<!--
 **Captura de errores:**
-Explica cómo depurar y solucionar errores comunes.
+Explica cómo depurar y solucionar errores comunes. -->
 
 ## Conclusión
 
@@ -217,8 +217,8 @@ Resalta los conocimientos adquiridos sobre autómatas celulares y simulaciones.
 **Posibilidades de mejora:**
 Sugerir nuevas características, como diferentes reglas o patrones iniciales.
 
-**Compartir la experiencia:**
-Invita a los lectores a compartir sus propias implementaciones y descubrimientos.
+<!-- **Compartir la experiencia:**
+Invita a los lectores a compartir sus propias implementaciones y descubrimientos. -->
 
 ## Referencias
 
@@ -233,7 +233,7 @@ Invita a los lectores a compartir sus propias implementaciones y descubrimientos
 - Implementaciones
 - Aplicaciones avanzadas
 
-**Anotaciones personales:**
+<!-- **Anotaciones personales:**
 Destaca los aspectos más relevantes de cada recurso.
 
 ## Recursos Adicionales
@@ -258,4 +258,4 @@ Adapta el contenido al nivel de conocimiento del público objetivo.
 **Actualización:**
 Mantén la documentación actualizada con las últimas versiones del juego y las tecnologías utilizadas.
 
-Implementando estas mejoras, la documentación del "Juego de la Vida" se convertirá en una herramienta valiosa para aprender, comprender y disfrutar de este fascinante juego.
+Implementando estas mejoras, la documentación del "Juego de la Vida" se convertirá en una herramienta valiosa para aprender, comprender y disfrutar de este fascinante juego. -->

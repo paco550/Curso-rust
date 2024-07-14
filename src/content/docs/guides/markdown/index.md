@@ -1,30 +1,28 @@
 ---
-title: Curso Curso de Markdown y Markdown Extended (MDX)
+title: Markdown (MD) y Markdown Extended (MDX)
 description: Guia basica para aprender Curso de Markdown y Markdown Extended (MDX)
 ---
 
 ## Introducción
 
 1. [Introducción al Curso](01-introduccion)
-   1. [Objetivo del Curso](01-introduccion#objetivo-del-Curso)
+   <!-- 1. [Objetivo del Curso](01-introduccion#objetivo-del-Curso)
    1. [Diferencias entre Markdown (MD) y Markdown Extended (MDX)](<01-introduccion#Diferencias-entre-Markdown-(MD)-y-Markdown-Extended-(MDX)>)
    1. [Explicación de las diferencias clave](01-introduccion#explicación-de-las-diferencias-clave)
    1. [Integración con JSX](01-introduccion#integración-con-jsx)
    1. [Flexibilidad](01-introduccion#flexibilidad)
    1. [Uso](01-introduccion#uso)
-   1. [Ejemplos de MD y MDX](01-introduccion#ejemplos-de-md-y-mdx)
+   1. [Ejemplos de MD y MDX](01-introduccion#ejemplos-de-md-y-mdx) -->
 
-## Capítulo 1: Fundamentos de Markdown
+2. [Estilos](#estilos)
 
-1. [**Sintaxis básica**](#sintaxis-básica)
-
-   - [Encabezados](#encabezados)
+   <!-- - [Encabezados](#encabezados)
    - [Párrafos](#párrafos)
    - [Énfasis (negritas y cursivas)](#énfasis-negritas-y-cursivas)
    - [Listas (ordenadas y desordenadas)](#listas-ordenadas-y-desordenadas)
-   - [Citas](#citas)
+   - [Citas](#citas) -->
 
-2. [**Elementos intermedios**](#elementos-intermedios)
+<!-- 2. [**Elementos intermedios**](#elementos-intermedios)
    - [Enlaces](#enlaces)
    - [Imágenes](#imágenes)
    - [Tablas](#tablas)
@@ -94,4 +92,4 @@ description: Guia basica para aprender Curso de Markdown y Markdown Extended (MD
    - [Crear la documentación completa de un pequeño proyecto de software utilizando MD y MDX](#crear-la-documentación-completa-de-un-pequeño-proyecto-de-software-utilizando-md-y-mdx)
 
 2. [**Presentación Interactiva**](#presentación-interactiva)
-   - [Crear una presentación sobre un tema técnico utilizando MDX y componentes React](#crear-una-presentación-sobre-un-tema-técnico-utilizando-mdx-y-componentes-react)
+   - [Crear una presentación sobre un tema técnico utilizando MDX y componentes React](#crear-una-presentación-sobre-un-tema-técnico-utilizando-mdx-y-componentes-react) -->
