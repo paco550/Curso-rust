@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
 
-const resolution = 20;
-const rows = 25;
-const cols = 25;
+const resolution = 20; // Tamaño de cada celda
+const rows = 25; // Número de filas
+const cols = 25; // Número de columnas
 
 function createBoard() {
   return Array.from({ length: rows }, () => Array(cols).fill(0));
@@ -64,17 +64,25 @@ const GameOfLife = () => {
   return (
     <div>
       <h1>Juego de la Vida</h1>
-      <div style={{ display: 'grid', gridTemplateColumns: `repeat(${cols}, ${resolution}px)` }}>
+      <div style={{ 
+        display: 'grid', 
+        gridTemplateColumns: `repeat(${cols}, ${resolution}px)`,
+        gridTemplateRows: `repeat(${rows}, ${resolution}px)`,
+        width: `${cols * resolution}px`,
+        height: `${rows * resolution}px`,
+        margin: '0 auto',
+        outline: '1px solid black'
+      }}>
         {board.map((row, x) =>
           row.map((cell, y) => (
             <div
               key={`${x}-${y}`}
               onClick={() => toggleCell(x, y)}
               style={{
-                width: resolution,
-                height: resolution,
+                width: `${resolution}px`,
+                height: `${resolution}px`,
                 backgroundColor: cell ? 'black' : 'white',
-                border: '1px solid #ddd'
+                border: '1px solid #ccc'
               }}
             />
           ))

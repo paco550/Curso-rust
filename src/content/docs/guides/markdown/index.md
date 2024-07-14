@@ -14,9 +14,11 @@ description: Guia basica para aprender Curso de Markdown y Markdown Extended (MD
    1. [Uso](01-introduccion#uso)
    1. [Ejemplos de MD y MDX](01-introduccion#ejemplos-de-md-y-mdx) -->
 
-2. [Estilos](#estilos)
+## Capítulo 1: Fundamentos de Markdown
 
-   <!-- - [Encabezados](#encabezados)
+1. [**Sintaxis básica**](#sintaxis-básica)
+
+   - [Encabezados](#encabezados)
    - [Párrafos](#párrafos)
    - [Énfasis (negritas y cursivas)](#énfasis-negritas-y-cursivas)
    - [Listas (ordenadas y desordenadas)](#listas-ordenadas-y-desordenadas)
