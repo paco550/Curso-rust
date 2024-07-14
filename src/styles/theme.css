@@ -64,7 +64,7 @@ header.header {
   display: flex;
   gap: 0.5rem;
   /* color: var(--sl-color-white); */
-  color: #ac065e;
+  color: #7B2CBF;
 }
 
 /* Change link color for icons from accent-light to white */
