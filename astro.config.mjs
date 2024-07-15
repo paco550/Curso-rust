@@ -49,7 +49,8 @@ export default defineConfig({
       SiteTitle: './src/components/SiteTitle.astro',
       Sidebar: './src/components/Sidebar.astro',
       Pagination: './src/components/Pagination.astro',
-      Hero: './src/components/Hero.astro'
+      Hero: './src/components/Hero.astro',
+      SmokeBackground: './src/components/SmokeBackground.astro'
     },
     customCss: ['@fontsource-variable/space-grotesk/index.css', '@fontsource/space-mono/400.css', '@fontsource/space-mono/700.css', './src/styles/theme.css'],
     expressiveCode: {
