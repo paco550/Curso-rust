@@ -1,6 +1,6 @@
 ---
 title: El juego de la vida (javaScript)
-description: Guia basica para crear el juego de la vida de John Horton Conway 
+description: Guia basica para crear el juego de la vida de John Horton Conway
 ---
 
 # Curso: Implementación del "Juego de la Vida" con Astro

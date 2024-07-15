@@ -14,9 +14,9 @@ export default defineConfig({
         label: 'español'
       }
     },
-    title: 'ÓXIDO',
+    title: 'DevNotes',
     logo: {
-      src: './src/assets/ion-logo.svg'
+      src: './src/assets/cabeza-gorila.png'
     },
     social: {
       github: 'https://github.com/paco550/Curso-rust'
@@ -32,6 +32,11 @@ export default defineConfig({
       autogenerate: {
         directory: 'guides'
       }
+    },{
+      label: '[book] MiniRetos by Moure',
+      autogenerate: {
+        directory: 'miniretos'
+      }
     }, {
       label: '[book] Proyectos',
       autogenerate: {
@@ -44,8 +49,7 @@ export default defineConfig({
       SiteTitle: './src/components/SiteTitle.astro',
       Sidebar: './src/components/Sidebar.astro',
       Pagination: './src/components/Pagination.astro',
-      Hero: './src/components/Hero.astro',
-      SmokeBackground: './src/components/SmokeBackground.astro',
+      Hero: './src/components/Hero.astro'
     },
     customCss: ['@fontsource-variable/space-grotesk/index.css', '@fontsource/space-mono/400.css', '@fontsource/space-mono/700.css', './src/styles/theme.css'],
     expressiveCode: {

@@ -3,51 +3,54 @@ title: Introducción al Curso
 description: Guia basica para aprender rust
 ---
 
-## Objetivo del Curso
+## Introducción al Curso
 
+**Objetivo del Curso:**
 Este curso tiene como objetivo enseñarte Rust desde lo más básico hasta construir aplicaciones avanzadas. Rust es un lenguaje de programación de sistemas enfocado en la seguridad y el rendimiento.
 
 ## Instalación
 
+**Instalación de Rust:**
 Para instalar Rust, utiliza `rustup`, el instalador de Rust:
 
 ```bash
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 
-**Después de instalar Rust, asegúrate de que está correctamente instalado:**
+### Truco Mnemotécnico:
+
+###### RUSTup - Rápido Utilizador de Software con Trust
+
+Después de instalar Rust, asegúrate de que está correctamente instalado:
 
 ```bash
 rustc --version
 ```
 
-## Selección del IDE
+<Activity>
+<script>
+    <h3>Verifica la instalación de Rust</h3>
+    <p>Ejecuta el siguiente comando en tu terminal:</p>
+    <code>rustc --version</code>
+    <p>¿Aparece la versión de Rust correctamente?</p>
+    <button on:click={() => checkAnswer('rustc --version')}>Verificar</button>
+    <p id="feedback"></p>
+    <script>
+        function checkAnswer(command) {
+            if (command === 'rustc --version') {
+                document.getElementById('feedback').textContent = '¡Correcto! Rust está instalado.';
+                document.getElementById('feedback').style.color = 'green';
+            } else {
+                document.getElementById('feedback').textContent = 'Incorrecto. Intenta de nuevo.';
+                document.getElementById('feedback').style.color = 'red';
+            }
+                                                        
+    </script>
+</Activity>
 
-### Configuración de Visual Studio Code para Rust
 
-Instala la extensión "rust-analyzer" en VSCode.
-Configura el debugger siguiendo la documentación oficial de VSCode y Rust <a href="https://code.visualstudio.com/docs/languages/rust" target="_blank">documentación oficial de VSCode y Rust</a>.
+[Responde aquí](./01_introduccion/actividades/03_configuracion_entorno_actividad.md)
 
-## Tu Primer Hello World
+---
 
-### Código de Ejemplo
-
-```rs
-fn main() {
-    // Esta línea imprime "Hello, world!" en la consola
-    println!("Hello, world!");
-}
-```
-
-## Cargo: Gestor de Paquetes y Build System de Rust
-
-### Iniciar un Proyecto con Cargo
-
-Cargo es la herramienta de Rust para gestionar proyectos.
-
-```bash
-cargo new hello_cargo
-cd hello_cargo
-cargo build
-cargo run
-```
+[>> Siguiente: ¿Qué es Rust?](./01_introduccion/01_que_es_rust.md)
