@@ -1,4 +1,4 @@
-<!-- ---
+---
 
 ---
 
@@ -36,7 +36,7 @@
   light.position.set(-1, 0, 1);
   scene.add(light);
 
-  const tex = new THREE.TextureLoader().load("src/assets/smoke.png");
+  const tex = new THREE.TextureLoader().load("/smoke.png");
   const material = new THREE.MeshLambertMaterial({
     color: 0xffffff,
     depthWrite: false,
@@ -74,12 +74,9 @@
     camera.aspect = width / height;
     camera.updateProjectionMatrix();
   });
-</script> -->
+</script>
 
-
-
-<!-- ---
-import { onMount } from "solid-js";
+<!-- import { onMount } from "solid-js";
 ---
 
 <canvas class="smoke-canvas"></canvas>
