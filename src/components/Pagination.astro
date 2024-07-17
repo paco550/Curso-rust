@@ -10,6 +10,18 @@ const { prev, next } = pagination;
 const isRtl = dir === "rtl";
 ---
 
+<!-- ---
+import Icon from "./user-components/Icon.astro";
+import type { Props } from "@astrojs/starlight/props";
+// import SmokeEffect from "./src/components/SmokeEffect";
+// import SmokeEffect from './SmokeEffect';
+// import { useEffect } from 'react'
+
+const { dir, labels, pagination } = Astro.props;
+const { prev, next } = pagination;
+const isRtl = dir === "rtl";
+---
+
 <div class="pagination-links" dir={dir}>
   {
     prev && (
@@ -37,13 +49,6 @@ const isRtl = dir === "rtl";
   }
 </div>
 
-<!-- <div class="smoke-background">
-  <SmokeEffect client:load style="position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -1;"/></div> -->
-
 <div class="container">
   <div data-text="Github" style="--r:-15;" class="glass">
     <svg viewBox="0 0 496 512" height="1em" xmlns="http://www.w3.org/2000/svg">
@@ -60,28 +65,29 @@ const isRtl = dir === "rtl";
     </svg>
   </div>
   <div data-text="Earn" style="--r:25;" class="glass">
-    <svg viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
-      <path
-        d="M64 64C28.7 64 0 92.7 0 128V384c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V128c0-35.3-28.7-64-64-64H64zm64 320H64V320c35.3 0 64 28.7 64 64zM64 192V128h64c0 35.3-28.7 64-64 64zM448 384c0-35.3 28.7-64 64-64v64H448zm64-192c-35.3 0-64-28.7-64-64h64v64zM288 160a96 96 0 1 1 0 192 96 96 0 1 1 0-192z"
-      ></path>
-    </svg>
+    <a href="https://github.com/tu-repositorio">
+      <svg viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M64 64C28.7 64 0 92.7 0 128V384c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V128c0-35.3-28.7-64-64-64H64zm64 320H64V320c35.3 0 64 28.7 64 64zM64 192V128h64c0 35.3-28.7 64-64 64zM448 384c0-35.3 28.7-64 64-64v64H448zm64-192c-35.3 0-64-28.7-64-64h64v64zM288 160a96 96 0 1 1 0 192 96 96 0 1 1 0-192z"
+        ></path>
+      </svg>
+    </a>
   </div>
-</div>
 
-<div class="page-footer">
-  <div class="footer-links">
-    <span>©️ Francisco Fernández</span>
-    <span>©️ David llopis</span>
-    <span>—</span>
-    <a href="https://github.com/paco550/">Homepage</a>
+  <div class="page-footer">
+    <div class="footer-links">
+      <span>©️ Francisco Fernández</span>
+      <span>©️ David llopis</span>
+      <span>—</span>
+      <a href="https://github.com/paco550/">Homepage</a>
+    </div>
+    <div class="social-footer-icons">
+      <a href="https://github.com/paco550/Curso-rust" aria-label="GitHub Icon"><Icon name="github" size="1.25rem" /></a>
+    </div>
   </div>
-  <div class="social-footer-icons">
-    <a href="https://github.com/paco550/Curso-rust" aria-label="GitHub Icon"><Icon name="github" size="1.25rem" /></a>
-  </div>
-</div>
 
-<style>
-  /* .smoke-background {
+  <style>
+    /* .smoke-background {
     position: fixed;
     top: 0;
     left: 0;
@@ -90,9 +96,9 @@ const isRtl = dir === "rtl";
     /* z-index: -1; Asegúrate de que el fondo esté detrás de todo el contenido */
     /* overflow: hidden; */
     /* pointer-events: none; Para que no interfiera con la interacción del usuario */
-  /* } */
+    /* } */
 
-  /* .smokeCanvas {
+    /* .smokeCanvas {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -100,15 +106,215 @@ const isRtl = dir === "rtl";
     width: 100%;
     height: 100%;
   } */
+    body {
+      background:
+        linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(71, 2, 75, 0.9)),
+        url("../assets/cabeza-gorila.png") no-repeat;
+      background-size: cover;
+      background-position: calc(100% + 150px) center;
+      /* background-size: 200px 200px;
+    background-position: center;
+    justify-content: center; */
+    }
+
+    .container {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container .glass {
+      position: relative;
+      width: 100px;
+      height: 120px;
+      background: linear-gradient(#fff2, transparent);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.3s;
+      border-radius: 10px;
+      margin-top: -200px;
+      backdrop-filter: blur(10px);
+      transform: rotate(calc(var(--r) * 1deg));
+    }
+
+    .container:hover .glass {
+      transform: rotate(0deg);
+      margin: 1 10px;
+    }
+
+    .container .glass::before {
+      content: attr(data-text);
+      position: absolute;
+      bottom: 0;
+      width: 50%;
+      height: 20px;
+      background: rgba(255, 255, 255, 0.05);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+    }
+    .container .glass svg {
+      font-size: 2.5em;
+      fill: #fff;
+    }
+
+    .pagination-links {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(18rem, 100%), 1fr));
+      gap: 1rem;
+      padding: 1.5rem var(--sl-content-pad-x);
+    }
+
+    .pagination-links:not(:has(a)) {
+      padding: 0;
+    }
+
+    a.pagination {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 0.5rem;
+      width: 100%;
+      flex-basis: calc(50% - 0.5rem);
+      flex-grow: 1;
+      border: 1px solid var(--sl-color-gray-5);
+      border-radius: 0.5rem;
+      padding: 1rem;
+      text-decoration: none;
+      color: var(--sl-color-gray-2);
+      box-shadow: var(--sl-shadow-md);
+      overflow-wrap: anywhere;
+      transition: all 0.1s ease;
+    }
+
+    /* a {
+    text-decoration: none;
+  } */
+    a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .social-footer-icons a {
+      display: inline-block !important;
+      height: var(--sl-icon-size);
+    }
+
+    [rel="next"] {
+      justify-content: end;
+      text-align: end;
+      flex-direction: row-reverse;
+    }
+    a:hover {
+      border-color: var(--sl-color-gray-2);
+    }
+
+    .link-title {
+      color: var(--sl-color-white);
+      font-size: var(--sl-text-2xl);
+      line-height: var(--sl-line-height-headings);
+    }
+
+    svg {
+      flex-shrink: 0;
+    }
+  </style>
+</div> -->
+<div class="pagination-links" dir={dir}>
+  {
+    prev && (
+      <a class="pagination" href={prev.href} rel="prev">
+        <Icon name={isRtl ? "right-arrow" : "left-arrow"} size="1.5rem" />
+        <span>
+          {labels["page.previousLink"]}
+          <br />
+          <span class="link-title">{prev.label}</span>
+        </span>
+      </a>
+    )
+  }
+  {
+    next && (
+      <a class="pagination" href={next.href} rel="next">
+        <Icon name={isRtl ? "left-arrow" : "right-arrow"} size="1.5rem" />
+        <span>
+          {labels["page.nextLink"]}
+          <br />
+          <span class="link-title">{next.label}</span>
+        </span>
+      </a>
+    )
+  }
+</div>
+
+<div class="container">
+  <a target="_blank" href="https://github.com/paco550" class="card-link">
+    <div data-text="Github" style="--r:-15;" class="glass">
+      <svg viewBox="0 0 496 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+        ></path>
+      </svg>
+    </div>
+  </a>
+  <a target="_blank" href="https://github.com/paco550/Curso-rust" class="card-link">
+    <div data-text="Code" style="--r:5;" class="glass">
+      <svg viewBox="0 0 640 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"
+        ></path>
+      </svg>
+    </div>
+  </a>
+  <a
+    target="_blank"
+    href="https://www.linkedin.com/in/francisco-fern%C3%A1ndez-bail%C3%A9n-744726a0/"
+    class="card-link"
+  >
+    <div data-text="linkedin" style="--r:25;" class="glass">
+      <svg viewBox="0 0 448 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M100.28 448H7.4V149.1h92.78zm-46.14-330C24.19 118 0 93.87 0 63.56A54.68 54.68 0 0154.22 8C82.3 8 106.5 31.69 106.5 63s-24.21 54.68-52.36 54.68zM447.92 448h-92.68v-185c0-44.23-15.82-74.4-55.25-74.4-30.2 0-48.16 20.3-56.08 39.91-2.87 7-3.57 16.75-3.57 26.57V448H147.6s1.24-300.44 0-331.56h92.67v47c-5.76-8.87-15.37-21.57-37.44-21.57-27.36 0-47.92 17.9-47.92 56.28v249.85H103.5V149.1h90.69v40.86h1.31a99.12 99.12 0 0189.54-49.28c65.35 0 114.18 42.72 114.18 134.5V448z"
+        ></path>
+      </svg>
+    </div>
+  </a>
+</div>
+
+<div class="page-footer">
+  <div class="footer-links">
+    <span>©️ Francisco Fernández</span>
+    <span>©️ David Llopis</span>
+    <span>—</span>
+    <a href="https://github.com/paco550/">Homepage</a>
+  </div>
+  <div class="social-footer-icons">
+    <a href="https://github.com/paco550/Curso-rust" aria-label="GitHub Icon">
+      <Icon name="github" size="1.25rem" />
+    </a>
+  </div>
+</div>
+
+<style>
   body {
     background:
       linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(71, 2, 75, 0.9)),
       url("../assets/cabeza-gorila.png") no-repeat;
     background-size: cover;
     background-position: calc(100% + 150px) center;
-    /* background-size: 200px 200px;
-    background-position: center;
-    justify-content: center; */
   }
 
   .container {
@@ -116,6 +322,7 @@ const isRtl = dir === "rtl";
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 20px; /* Añadido para espaciar las tarjetas */
   }
 
   .container .glass {
@@ -152,6 +359,7 @@ const isRtl = dir === "rtl";
     align-items: center;
     color: #fff;
   }
+
   .container .glass svg {
     font-size: 2.5em;
     fill: #fff;
@@ -188,6 +396,8 @@ const isRtl = dir === "rtl";
 
   a {
     text-decoration: none;
+    color: inherit;
+    display: block;
   }
 
   .footer-links {
@@ -207,6 +417,7 @@ const isRtl = dir === "rtl";
     text-align: end;
     flex-direction: row-reverse;
   }
+
   a:hover {
     border-color: var(--sl-color-gray-2);
   }
