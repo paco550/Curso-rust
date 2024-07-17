@@ -1,24 +1,31 @@
 ---
-title: DevNotes
+title: DevNotes => {
 description: Mis apuntes y componentes de programación
 tableOfContents: false
 hero:
   tagline: ¡Bienvenido a DevNotes!
   image:
     file: ../../assets/cabeza-gorila.png
-#   actions:
-#     - text: Descripción general de los cursos
-#       link: /starlight-ion-theme/features/
-#       icon: right-arrow
-#       variant: primary
-#     - text: Leer la documentación
-#       link: https://starlight.astro.build
-#       icon: external
+  underConstruction:
+    text: Sitio en construcción
+    icon: obrero
+  # actions:
+    # - text: Descripción general de los cursos
+      # link: /starlight-ion-theme/features/
+      # icon: list
+      # variant: primary
+    # - text: Leer la documentación
+    #   link: https://starlight.astro.build
+    #   icon: external
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 import SmokeBackground from 'src/components/SmokeBackground.astro';
 // import SmokeEffect from 'src/components/SmokeEffect';
+
+<span style="display: inline-block; padding: 10px; border: 2px solid orange; border-radius: 10px; color: orange;">
+  Pagina en construcción
+</span>
 
   <SmokeBackground/>
 {/* <SmokeEffect client:load style="position: fixed;
@@ -27,9 +34,8 @@ import SmokeBackground from 'src/components/SmokeBackground.astro';
     transform: translate(-50%, -50%);
     z-index: -1;"/> */}
 
- {/* ## Próximos pasos
-
-<CardGrid stagger>
-	<Card title="Explora" icon="book">
-		Revisa nuestra [lista de cursos disponibles](lista#). variedad de recursos en diferentes lenguajes de programación y tecnologías.
-	</Card> */}
+{/* <CardGrid stagger>
+	<Card title="Explora" icon="obrero">
+		Revisa nuestra [lista de cursos disponibles](lista#).
+	</Card>
+</CardGrid> */}

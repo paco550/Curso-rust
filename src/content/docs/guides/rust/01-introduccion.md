@@ -48,9 +48,12 @@ rustc --version
     </script>
 </Activity>
 
-
 [Responde aquí](./01_introduccion/actividades/03_configuracion_entorno_actividad.md)
 
 ---
 
 [>> Siguiente: ¿Qué es Rust?](./01_introduccion/01_que_es_rust.md)
+
+## ...
+
+##

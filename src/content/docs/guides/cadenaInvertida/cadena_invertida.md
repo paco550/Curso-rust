@@ -10,13 +10,13 @@ description: Mini retos de programación
 ```js
 function invertirCadena(cadena) {
   // Convertimos la cadena en un array de caracteres
-  let arrayDeCaracteres = cadena.split('');
+  let arrayDeCaracteres = cadena.split("");
 
   // Invertimos el array de caracteres
   let arrayInvertido = arrayDeCaracteres.reverse();
 
   // Convertimos el array invertido de nuevo en una cadena
-  let cadenaInvertida = arrayInvertido.join('');
+  let cadenaInvertida = arrayInvertido.join("");
 
   // Devolvemos la cadena invertida
   return cadenaInvertida;
@@ -32,3 +32,7 @@ function invertirCadena(cadena) {
 - `arrayInvertido.join('')`: Convertimos el array invertido de nuevo en una cadena utilizando el metodo `join('')` que une los elementos en una cadena.
 
 - `return cadenaInvertida`: Devolvemos la cadena invertida.
+
+## ...
+
+##
