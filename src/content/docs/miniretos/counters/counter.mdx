@@ -1,0 +1,86 @@
+---
+title: Contador (Facil)
+description: Contador con JavaScript
+---
+import Counter from 'src/components/counter.jsx';
+
+### Contador (JS) 
+
+## React: Creando un Contador con useState
+
+#### vamos a crear un componente de React que actúa como un contador. Utilizaremos el hook `useState` para gestionar el estado del contador.
+
+## Paso 1: Importar useState
+
+#### Primero, necesitamos importar el hook `useState` desde React:
+
+```jsx
+import { useState } from 'react';
+```
+#### El hook useState nos permite agregar estado a nuestros componentes funcionales.
+#### Paso 2: Definir el Componente Counter 
+#### A continuación, definimos un componente funcional llamado Counter:
+
+```jsx
+function Counter() {
+  // Declara una variable de estado llamada "count" y una función para actualizarla llamada "setCount"
+  const [count, setCount] = useState(0);
+```
+```
+Aquí, estamos utilizando useState para declarar una variable de estado llamada count y una función para actualizarla llamada setCount. useState toma un valor inicial, en este caso 0.
+```
+```
+Paso 3: Renderizar el Contenido del Componente
+Dentro del componente, vamos a devolver un div que contiene el valor actual del contador y dos botones para incrementar y decrementar el contador:
+```
+```jsx
+Copiar código
+  return (
+    <div>
+      {/* Muestra el valor actual del contador */}
+      <h2>Contador: {count}</h2>
+      {/* Botón para incrementar el contador */}
+      <button onClick={() => setCount(count + 1)}>Incrementar</button>
+      {/* Botón para decrementar el contador */}
+      <button onClick={() => setCount(count - 1)}>Decrementar</button>
+    </div>
+  );
+}
+```
+```
+{count} dentro de <h2> muestra el valor actual del contador.
+
+Cada botón tiene un evento onClick que llama a setCount para actualizar el valor de count.
+
+Paso 4: Exportar el Componente
+Finalmente, exportamos el componente para que pueda ser utilizado en otras partes de la aplicación:
+```
+```jsx
+export default Counter;
+```
+#### Código Completo Aquí está el código completo del componente Counter:
+
+```jsx
+import { useState } from 'react';
+
+function Counter() {
+  const [count, setCount] = useState(0);
+```
+```
+  return (
+    <div>
+      <h2>Contador: {count}</h2>
+      <button onClick={() => setCount(count + 1)}>Incrementar</button>
+      <button onClick={() => setCount(count - 1)}>Decrementar</button>
+    </div>
+  );
+}
+```
+```jsx
+export default Counter;
+```
+#### ¡Y eso es todo! Ahora tienes un componente de contador funcional utilizando el hook useState en React
+
+<Counter client:load/>
+
+### ...

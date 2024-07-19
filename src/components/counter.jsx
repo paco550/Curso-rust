@@ -13,7 +13,7 @@ function Counter() {
       {/* Botón para incrementar el contador */}
       <button onClick={() => setCount(count + 1)}>Incrementar</button>
       {/* Botón para decrementar el contador */}
-      <button onClick={() => setCount(count - 1)}>Decrementar</button>
+      <button onClick={() => setCount(count -1)}>Decrementar</button>
     </div>
   );
 }

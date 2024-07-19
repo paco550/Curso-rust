@@ -50,6 +50,7 @@ export default defineConfig({
       Sidebar: './src/components/Sidebar.astro',
       Pagination: './src/components/Pagination.astro',
       Hero: './src/components/Hero.astro',
+      GameOfLife: './src/components/GameOfLife.jsx',
       // SmokeEffect: './src/components/SmokeEffect.tsx',
       // SmokeBackground: './src/components/SmokeBackground.astro'
     },
