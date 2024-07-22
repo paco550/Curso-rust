@@ -5,7 +5,7 @@ import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://github.com/paco550/Curso-rust',
+  site: 'https://dancing-starship-f238bb.netlify.app/',
   base: '/',
   integrations: [starlight({
     locales: {
