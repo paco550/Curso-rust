@@ -56,6 +56,4 @@ Este es un párrafo en MDX.
 <MiComponente />
 ```
 
-## ...
-
 ##

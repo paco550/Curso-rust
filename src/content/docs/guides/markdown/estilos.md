@@ -53,6 +53,6 @@ Este es un texto en **_negrita y cursiva_**.
   Este texto tiene un borde redondeado y es de color rojo.
 </span>
 
-## ...
+##
 
 ##

@@ -54,6 +54,4 @@ rustc --version
 
 [>> Siguiente: ¿Qué es Rust?](./01_introduccion/01_que_es_rust.md)
 
-## ...
-
 ##

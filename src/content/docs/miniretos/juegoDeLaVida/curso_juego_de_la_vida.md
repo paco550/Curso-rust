@@ -260,6 +260,4 @@ Mantén la documentación actualizada con las últimas versiones del juego y las
 
 Implementando estas mejoras, la documentación del "Juego de la Vida" se convertirá en una herramienta valiosa para aprender, comprender y disfrutar de este fascinante juego.
 
-## ...
-
 ##
