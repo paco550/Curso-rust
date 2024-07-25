@@ -37,10 +37,13 @@
   background-color: var(--sl-color-black);
   border-right: 1px solid var(--sl-border);
   opacity: 80%;
+  /* box-shadow: 2px 2px 20px #ff00f2; */
+  filter: drop-shadow(2px 2px 30px #ff00f2);
+  overflow: hidden;
 }
 img {
   filter: drop-shadow(2px 2px 30px #ff00f2);
-  box-shadow: 2px 2px 20px #ff00f2;
+  /* box-shadow: 2px 2px 20px #ff00f2; */
 }
 /* Change background of header & add border */
 header.header {
