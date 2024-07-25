@@ -15,7 +15,13 @@ hero:
   #     link: https://starlight.astro.build
   #     icon: external
 ---
-
+<head>
+  <meta property="og:title" content="DevNotes" />
+  <meta property="og:description" content="Mis apuntes y componentes de programación" />
+  <meta property="og:image" content="/assets/cabeza-gorila.png" />
+  <meta property="og:url" content="https://devnotess.netlify.app/" />
+  <meta name="twitter:card" content="summary_large_image" />
+</head>
 import { Card, CardGrid } from '@astrojs/starlight/components';
 import SmokeBackground from 'src/components/SmokeBackground.astro';
 // import SmokeEffect from 'src/components/SmokeEffect';
