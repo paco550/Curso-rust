@@ -1,30 +1,30 @@
 /* Specify colors. NOTE: YOU CAN CUSTOMIZE THESE HOWEVER YOU WANT! */
 :root {
   /* Font */
-  --sl-font: 'Space Grotesk', sans-serif;
+  --sl-font: "Space Grotesk", sans-serif;
   --sl-font-system-mono: "Space Mono", monospace;
 
   /* Dark mode colors */
-	--sl-color-accent-low: #3c0017;
-	--sl-color-accent: #bd0249;
-	--sl-color-accent-high: #ff78ac;
-	--sl-color-white: #ffffff;
-	--sl-color-gray-1: #c2c2c2;
-	--sl-color-gray-2: #a3a3a3;
-	--sl-color-gray-3: #838383;
-	--sl-color-gray-4: #3f3f3f;
-	--sl-color-gray-5: #262626;
-	--sl-color-gray-6: #121212;
-	--sl-color-black: #070707;
+  --sl-color-accent-low: #3c0017;
+  --sl-color-accent: #bd0249;
+  --sl-color-accent-high: #ff78ac;
+  --sl-color-white: #ffffff;
+  --sl-color-gray-1: #c2c2c2;
+  --sl-color-gray-2: #a3a3a3;
+  --sl-color-gray-3: #838383;
+  --sl-color-gray-4: #3f3f3f;
+  --sl-color-gray-5: #262626;
+  --sl-color-gray-6: #121212;
+  --sl-color-black: #070707;
 
-	--sl-color-red-low: #3c0017;
+  --sl-color-red-low: #3c0017;
   --sl-color-red: #bd0249;
-	--sl-color-red-high: #ff78ac;
+  --sl-color-red-high: #ff78ac;
 
   --sl-color-purple-low: #33225b;
   --sl-color-purple: #8a5cf5;
   --sl-color-purple: #9975ee;
-  
+
   --sl-border: #262626;
   --pagefind-ui-border: #262626;
   --pagefind-ui-primary: var(--sl-color-accent);
@@ -36,12 +36,17 @@
 #starlight__sidebar {
   background-color: var(--sl-color-black);
   border-right: 1px solid var(--sl-border);
+  opacity: 80%;
 }
-
+img {
+  filter: drop-shadow(2px 2px 30px #ff00f2);
+  box-shadow: 2px 2px 20px #ff00f2;
+}
 /* Change background of header & add border */
 header.header {
   background-color: var(--sl-color-black);
   border-bottom: 1px solid var(--sl-border);
+  opacity: 80%;
 }
 
 /* Remove the border for the theme selector since it is disabled */
@@ -52,7 +57,7 @@ header.header {
 /* Add a gap to the now split + flex site title */
 .site-title {
   gap: 1rem;
-  
+  opacity: 80%;
 }
 
 /* Reduce the image size of the site title */
@@ -64,7 +69,7 @@ header.header {
   display: flex;
   gap: 0.5rem;
   /* color: var(--sl-color-white); */
-  color: #7B2CBF;
+  color: #ec63f3e6;
 }
 
 /* Change link color for icons from accent-light to white */
@@ -73,7 +78,8 @@ header.header {
 }
 
 /* Add border-radius to card, change padding, add transition */
-.card, .sl-link-card {
+.card,
+.sl-link-card {
   border-radius: 12px !important;
   padding: 1.5rem !important;
   transition: all 0.1s ease;
@@ -130,6 +136,7 @@ header.header {
 /* Remove default padding... */
 .content-panel:has(footer) {
   padding: 0;
+  opacity: 80%;
 }
 
 /* ... and instead add it to the content itself to allow for proper full-width borders */
@@ -153,7 +160,8 @@ nav[aria-labelledby="starlight__on-this-page--mobile"] a {
   color: var(--sl-color-gray-2);
 }
 
-a:hover, a[aria-current="true"] {
+a:hover,
+a[aria-current="true"] {
   color: var(--sl-color-white) !important;
 }
 
@@ -170,7 +178,7 @@ starlight-toc a {
 }
 
 /* Change tab color */
-a[role=tab][aria-selected=true] {
+a[role="tab"][aria-selected="true"] {
   border-color: var(--sl-color-accent) !important;
   font-weight: 400 !important;
   color: var(--sl-color-accent) !important;
@@ -183,8 +191,12 @@ starlight-file-tree.not-content {
 }
 
 /* Change font & remove ligatures for all code & the file tree */
-.expressive-code, pre, .expressive-code pre > code, code, starlight-file-tree {
-  font-family: 'Space Mono', monospace !important;
+.expressive-code,
+pre,
+.expressive-code pre > code,
+code,
+starlight-file-tree {
+  font-family: "Space Mono", monospace !important;
   font-variant-ligatures: none !important;
 }
 
@@ -268,7 +280,8 @@ figcaption.header span::after {
   transition: all 0.1s ease;
 }
 
-.pagefind-ui__result-title, .pagefind-ui__result-nested {
+.pagefind-ui__result-title,
+.pagefind-ui__result-nested {
   outline-color: var(--sl-color-accent) !important;
 }
 
