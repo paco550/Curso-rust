@@ -95,6 +95,6 @@ title: Tema 1 - Principios del Diseño Web
 - **Texto e imágenes**: Predomina el uso de texto y gráficos.
 - **Resolución fija**: Diseñado para una resolución específica sin considerar adaptabilidad.
 
-[ >> Tema 2: Lenguajes de Marcado](tema2#1-introducción/)
+[ >> Tema 2: Lenguajes de Marcado](../tema2#1-introducción/).
 
 ##

@@ -144,6 +144,6 @@ Repaso de los puntos clave:
 - <span style="border: 2px solid #9b59b6; border-radius: 8px; padding: 4px; color: white;">**Elementos esenciales de un documento bien estructurado**</span>: Declaración, elementos raíz, y subelementos.
 - <span style="border: 2px solid #9b59b6; border-radius: 8px; padding: 4px; color: white;">**Validación y conformidad con esquemas**</span>: Asegura que los documentos cumplen con una estructura y reglas específicas.
 
-[>> Sigiente](tema3#1-introducción/)
+[>> Tema 3: Lenguajes de marcado para presentación de pagainas Web](../tema3#1-introducción/).
 
 ##
