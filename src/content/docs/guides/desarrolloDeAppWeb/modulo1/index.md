@@ -10,8 +10,8 @@ Este módulo se enfoca en la programación del lado del cliente, es decir, todo 
 
 #### UF1841: Elaboración de documentos web mediante lenguajes de marca
 
-[Tema 1: Diseño Web](tema1#diseño-web/)
-[Tema 2: Lenguajes de Marcado](tema2#1-introducción/)
+- [Tema 1: Diseño Web](tema1#diseño-web/).
+- [Tema 2: Lenguajes de Marcado](tema2#1-introducción/).
 
 - **Descripción:** En esta unidad se aprenderá a crear y estructurar documentos web utilizando lenguajes de marcado como HTML y CSS. Se abordarán temas como la semántica HTML, la accesibilidad y el diseño responsivo.
 - **Objetivos:**
