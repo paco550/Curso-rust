@@ -2,11 +2,7 @@
 title: Tema 1 - Principios del Diseño Web
 ---
 
-# Esquema de Estudio
-
 ## Diseño Web
-
-# Principios del Diseño Web
 
 ### ¿Qué es una Página Web?
 
