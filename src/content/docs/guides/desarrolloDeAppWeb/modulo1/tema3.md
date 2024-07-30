@@ -94,7 +94,7 @@ title: Tema 3 - HTML y XHTML
 
 ## 8. Listas
 
-<span style="border: 2px solid #f1c40f; border-radius: 8px; padding: 4px; color: black;">Creación de listas ordenadas y no ordenadas.</span>
+<span style="border: 2px solid #f1c40f; border-radius: 8px; padding: 4px;">Creación de listas ordenadas y no ordenadas.</span>
 
 - **Listas no ordenadas**: Uso de `<ul>` y `<li>`.
   ```html
@@ -113,7 +113,7 @@ title: Tema 3 - HTML y XHTML
 
 ## 9. Tablas
 
-<span style="border: 2px solid #f1c40f; border-radius: 8px; padding: 4px; color: black;">Definición y uso de tablas para estructurar datos.</span>
+<span style="border: 2px solid #f1c40f; border-radius: 8px; padding: 4px;">Definición y uso de tablas para estructurar datos.</span>
 
 - **Elementos de tabla**: `<table>`, `<tr>`, `<th>`, `<td>`.
   ```html
@@ -174,5 +174,7 @@ title: Tema 3 - HTML y XHTML
 - **Estructura básica y componentes de un documento HTML/XHTML**.
 - **Uso de colores, texto, enlaces, imágenes, listas, tablas, marcos, formularios, y optimización para móviles**.
 - **Conocimiento de elementos obsoletos y mejores prácticas actuales**.
+
+[ >> Tema 4 - Hojas de Estilo](../modulo1/tema4#elementos-y-estructura-de-una-hoja-de-estilos/).
 
 ##
