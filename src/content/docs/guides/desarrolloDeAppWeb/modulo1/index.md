@@ -1,5 +1,5 @@
 ---
-title: Modulo 1
+title: Indice Modulo 1
 ---
 
 ## Módulos y Unidades Formativas
@@ -10,10 +10,10 @@ Este módulo se enfoca en la programación del lado del cliente, es decir, todo 
 
 #### UF1841: Elaboración de documentos web mediante lenguajes de marca
 
-- [Tema 1: Diseño Web](tema1#diseño-web/).
-- [Tema 2: Lenguajes de Marcado](tema2#1-introducción/).
-- [Tema 3: Lenguajes de marcado para presentación de pagainas Web](tema3#1-introducción/).
-- [Tema 4 - Hojas de Estilo](tema4#1-introducción/).
+- [Tema 1: Diseño Web](tema1#principios-del-diseño-web/).
+- [Tema 2: Lenguajes de Marcado](tema2#lenguajes-de-marcado/).
+- [Tema 3: Lenguajes de marcado para presentación de pagainas Web](tema3#html-y-xhtml/).
+- [Tema 4 - Hojas de Estilo](tema4#hojas-de-estilo/).
 
 - **Descripción:** En esta unidad se aprenderá a crear y estructurar documentos web utilizando lenguajes de marcado como HTML y CSS. Se abordarán temas como la semántica HTML, la accesibilidad y el diseño responsivo.
 - **Objetivos:**
@@ -22,6 +22,9 @@ Este módulo se enfoca en la programación del lado del cliente, es decir, todo 
   - Asegurar la accesibilidad y usabilidad de los documentos.
 
 #### UF1842: Desarrollo y reutilización de componentes software y multimedia mediante lenguajes de guión
+
+- [Tema 5 - Arquitecturas de aplicaciones web](tema5#arquitecturas-de-aplicaciones-web/).
+- [Tema 6 - Navegadores web](tema6#navegadores-web/).
 
 - **Descripción:** Esta unidad se centra en el desarrollo y la reutilización de componentes software utilizando lenguajes de script como JavaScript. Además, se tratarán técnicas para integrar multimedia en las aplicaciones web.
 - **Objetivos:**

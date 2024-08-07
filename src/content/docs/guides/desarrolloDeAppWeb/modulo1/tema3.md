@@ -175,6 +175,6 @@ title: Tema 3 - HTML y XHTML
 - **Uso de colores, texto, enlaces, imágenes, listas, tablas, marcos, formularios, y optimización para móviles**.
 - **Conocimiento de elementos obsoletos y mejores prácticas actuales**.
 
-[ >> Tema 4 - Hojas de Estilo](../modulo1/tema4#elementos-y-estructura-de-una-hoja-de-estilos/).
+[ >> Tema 4 - Hojas de Estilo](tema4#elementos-y-estructura-de-una-hoja-de-estilos/).
 
 ##
